@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>Sample Form</h1>
+      
+      
+
+      <form>
+         <!-- Fieldset and Legend  -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <!-- Label and Input -->
+            <label for="Name">Name</label>
+            <input type="text" id="Name" Name="Name" placeholder="Enter Your Name" required>
+            <br><br>
+
+            <!-- Label and Input with Datalist -->
+             <label for="City">City</label>
+             <input type="text" id="City" Name="City" list="Cities" placeholder="Enter Your City" required>
+             <datalist id="Cities">
+                <option value="New York"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+                <option value="Houston"></option>
+                <option value="Phoenix"></option>
+                </datalist>
+                <br><br>
+
+                <!-- Textarea -->
+                 <label for="Comments">Comments</label>
+                 <textarea id="Comments" Name "Comments" rows "4" col "50" placeholder="Enter Your Comments"></textarea>
+                 <br><br>
+          </fieldset>
+
+          <!-- Dropdown -->
+           <label for="Department">Choose a Department</label>
+           <select id="Department" Name="Department" >
+            <optgroup label= "Technical">
+                <option value="Development">Development</option>
+                <option value="IT Support">IT Support</option>
+            </optgroup>
+            <optgroup label="Administrative">
+                <option value="HR">Human Resource</option>
+                <option value="Finanace">Finance</option>
+            </optgroup>
+           </select>
+           <br><br>
+
+           <!-- Output -->
+            <label for="Calculation">Calculation Result:</label>
+            <output id="Calculation" Name="Result">10</output>
+            <br><br>
+
+            <!-- Button -->
+             <button type="Submit">Submit</button>
+      </form>
+
+
+</body>
+</html>

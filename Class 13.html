@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Example</title>
+</head>
+<body>
+<!-- SVG Example -->
+ <h1>SVG Example</h1>
+ <svg width="400" height="400">
+    <!-- Circle -->
+    <circle cx="100" cy="100" r="50" fill="orange" />
+    
+    <!-- Rectangle -->
+    <rect x="150" y="50" width="100" height="100" fill="purple" />
+    
+    <!-- Line -->
+    <line x1="50" y1="200" x2="200" y2="200" stroke="blue" stroke-width="3" />
+    
+    <!-- Polygon -->
+    <polygon points="250,150 300,250 200,250" fill="green" />
+    
+    <!-- Polyline -->
+    <polyline points="350,150 400,100 350,50" fill="none" stroke="red" stroke-width="3" />
+</svg>
+
+<hr>
+
+ <!-- Details and Summary Example -->
+ <h2>Details and Summary Example</h2>
+ <details>
+     <summary>Click to see more Details</summary>
+     <p>This is additional information that is hidden by default. It can be revealed by clicking the summary above.</p>
+     <ul>
+         <li>Circle 1</li>
+         <li>Square 2</li>
+         <li>Triangle 3</li>
+         <li>Polygone 4</li>
+         <li>Line 5</li>
+     </ul>
+ </details>
+
+ <hr>
+
+ <!-- Dialog Example -->
+  <h3>Dialog Box Example</h3>
+  <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+    <dialog id="myDialog">
+        <p>This is a Dialog Box.</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+
+    <hr>
+
+     <!-- Menu Example -->
+      <h4>Menu Example</h4>
+      <menu type="context" id="contextMenu">
+        <menuitem label="New File" onclick="alert('New File clicked!')"></menuitem>
+        <menuitem label="Open File" onclick="alert('Open File clicked!')"></menuitem>
+        <menuitem label="Save File" onclick="alert('Save File clicked!')"></menuitem>
+    </menu>
+    <button oncontextmenu="document.getElementById('contextMenu').showModal(); return false;">
+        Right Click to Open Menu
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
